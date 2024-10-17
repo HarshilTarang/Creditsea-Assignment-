@@ -1,0 +1,81 @@
+/* Sidebar container */
+.sidebar {
+  width: 250px;
+  background: linear-gradient(145deg, #2d3e50, #1f2d3a); /* Gradient for a sleek modern look */
+  color: white;
+  padding: 20px;
+  border-radius: 8px; /* Slightly rounded edges for the sidebar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds depth to the sidebar */
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 90px; /* Slightly larger profile picture */
+  margin-bottom: 15px;
+  border: 4px solid #ffffff; /* Add a white border around the profile picture */
+}
+
+/* Sidebar Navigation */
+.sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0; /* Spacing between profile and navigation */
+}
+
+.sidebar-nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-nav ul li:hover {
+  background-color: #1e2a35; /* Darker hover background */
+  color: #e3e3e3; /* Light text color on hover for better contrast */
+}
+
+.sidebar-nav ul li i {
+  margin-right: 15px; /* Space between icon and text */
+  color: #c7d0d8; /* Slightly lighter icon color */
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.sidebar-nav ul li:hover i {
+  color: #ffffff; /* Icon color change on hover */
+}
+
+/* Sidebar Links */
+.sidebar-link {
+  color: #b0c4d4; /* Lighter color for better contrast */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px; /* Larger text for easier readability */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-link:hover {
+  background-color: #3b4e6e; /* Darker background on hover */
+  color: white; /* Text color change on hover */
+}
+
+.sidebar-link.active {
+  background-color: #4CAF50; /* Active link in vibrant green */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.2); /* Green shadow for active link */
+  font-weight: bold;
+}
+
+/* Optional: Hover effect for active link */
+.sidebar-link.active:hover {
+  background-color: #388e3c; /* Slightly darker green on hover for active state */
+}

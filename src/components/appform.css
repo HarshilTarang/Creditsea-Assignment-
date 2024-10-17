@@ -1,0 +1,97 @@
+/* Vibrant form styling */
+form {
+  background-color: #ffe066; /* Vibrant yellow background */
+  border-radius: 16px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ffcc00; /* Bold yellow border */
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ff6b6b; /* Vibrant coral border */
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fefefe; /* Light background for contrast */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+  border-color: #4ecdc4; /* Teal focus color */
+  background-color: #fff;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 12px;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #4ecdc4; /* Teal button */
+  color: #fff;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3bb7a6;
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Chart placeholder styling */
+.chart-container {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.chart-container canvas {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Additional styling for mobile responsiveness */
+@media (max-width: 600px) {
+  form {
+      padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+      font-size: 14px;
+  }
+
+  button[type="submit"] {
+      font-size: 14px;
+      padding: 10px 14px;
+  }
+}

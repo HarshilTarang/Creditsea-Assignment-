@@ -1,0 +1,88 @@
+.recent-loans {
+  margin-top: 30px;
+}
+
+.recent-loans h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #2c3e50; /* Darker shade for a more modern, professional look */
+  font-weight: 600;
+  text-transform: uppercase; /* Adds emphasis */
+  letter-spacing: 1px; /* Slight spacing for a clean look */
+}
+
+/* Style for the loan list */
+.recent-loans ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
+  overflow: hidden;
+}
+
+/* Style for each loan item */
+.recent-loans ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e0e0e0; /* Lighter border for separation */
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.recent-loans ul li:hover {
+  background-color: #f9f9f9; /* Subtle hover effect */
+}
+
+.recent-loans ul li:last-child {
+  border-bottom: none;
+}
+
+/* Style for the text inside each loan item */
+.recent-loans ul li span {
+  flex: 1;
+  text-align: left;
+  font-size: 16px; /* Slightly larger for readability */
+  color: #7f8c8d; /* Gray text for better contrast */
+}
+
+.recent-loans ul li span:nth-child(3) {
+  flex: 1.5;
+  text-align: right;
+  font-weight: 500;
+  color: #2c3e50; /* Darker text for the last column */
+}
+
+/* Status badge styling */
+.loan-status {
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Status Styles */
+.pending {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.approved {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.recent-loans ul li:hover .pending {
+  background-color: #fdd835; /* Darker yellow on hover */
+}
+
+.recent-loans ul li:hover .approved {
+  background-color: #388e3c; /* Darker green on hover */
+}
+

@@ -1,0 +1,190 @@
+/* Applied Loans Page Styling */
+.applied-loans-page {
+  padding: 25px;
+  background-color: #f0f9ff; /* Light blue background for a fresh look */
+  color: #333;
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Deficit Box Styling */
+.deficit-box {
+  display: flex;
+  align-items: center;
+  background-color: #e0ffe0; /* Light green for balance */
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.deficit-box img {
+  width: 45px;
+  height: 45px;
+}
+
+.deficit-amount {
+  font-size: 26px;
+  color: #6fce64; /* Vibrant green */
+  margin-left: 12px;
+  font-weight: bold;
+}
+
+/* Get Loan Button */
+.get-loan-button {
+  padding: 12px 25px;
+  background-color: #007bff; /* Vibrant blue */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-loan-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px); /* Hover lift effect */
+}
+
+/* Loan Options Styling */
+.loan-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.loan-option {
+  padding: 12px 25px;
+  background-color: #e6f7ff; /* Soft blue */
+  border: none;
+  border-radius: 8px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #007bff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loan-option:hover {
+  background-color: #d0efff;
+  transform: translateY(-2px);
+}
+
+.loan-option.active {
+  background-color: #007bff; /* Active option in vibrant blue */
+  color: white;
+}
+
+/* Loan Search Bar Styling */
+.loan-search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.loan-search-input {
+  padding: 12px;
+  width: 320px;
+  border-radius: 8px;
+  border: 2px solid #007bff; /* Blue border */
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loan-search-input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Applied Loans Styling */
+.applied-loans {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Loan Table Styling */
+.loan-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.loan-table th,
+.loan-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.loan-table th {
+  background-color: #007bff; /* Bold blue header */
+  color: white;
+}
+
+/* Loan Officer Styling */
+.loan-officer {
+  display: flex;
+  align-items: center;
+}
+
+.loan-officer-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Loan Updated Time */
+.loan-updated,
+.loan-time {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Status Badges */
+.status {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.pending {
+  background-color: #ffc107; /* Orange for pending */
+}
+
+.status.verified {
+  background-color: #28a745; /* Green for verified */
+}
+
+.status.rejected {
+  background-color: #dc3545; /* Red for rejected */
+}
+
+.status.approved {
+  background-color: #007bff; /* Blue for approved */
+}
+
+/* Table Pagination */
+.table-pagination {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}

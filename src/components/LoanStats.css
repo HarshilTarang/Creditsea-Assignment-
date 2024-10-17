@@ -1,0 +1,74 @@
+/* Loan Stats Section */
+.loan-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: #ffffff; /* White background for contrast */
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+}
+
+.stat-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.stat-card h3 {
+  font-size: 36px;
+  color: #2980b9; /* Vibrant blue for the stat number */
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.stat-card p {
+  font-size: 18px;
+  color: #7f8c8d; /* Subtle gray text for description */
+  margin: 0;
+}
+
+/* Add vibrant colors to the stat cards */
+.stat-card.stat-active {
+  background-color: #1abc9c; /* Teal background for active stats */
+  color: #fff;
+}
+
+.stat-card.stat-borrowers {
+  background-color: #e74c3c; /* Red background for borrowers */
+  color: white;
+}
+
+.stat-card.stat-cash {
+  background-color: #f39c12; /* Orange background for cash disbursed */
+  color: white;
+}
+
+.stat-card.stat-savings {
+  background-color: #2ecc71; /* Green background for savings */
+  color: white;
+}
+
+.stat-card.stat-repaid {
+  background-color: #3498db; /* Blue background for repaid loans */
+  color: white;
+}
+
+/* Add small icons inside the stat cards */
+.stat-card i {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .loan-stats {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust grid for smaller screens */
+  }
+}
